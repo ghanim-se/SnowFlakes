@@ -1,15 +1,18 @@
+* {
+  font-family: "Work sans";
+}
 body {
-    position: relative;
-    margin:0;
-    padding: 0;
-    font-family: sans-serif;
-    background-size: cover;
-    height:calc(100vh);
-    background-image: url(images/backgroundSnow.jpg); 
+  position: relative;
+  margin:0;
+  background-image: url(images/backgroundSnow.jpg); 
+  padding: 0;
+  height:calc(100vh);
+  background-size: cover;
 
 }
 
 .box {
+  box-shadow: 2px 2px 16px #111;
     z-index: 2;
     width: 300px;
     padding: 40px;
@@ -17,16 +20,17 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(-45deg, rgb(199, 198, 198), black);
+    background: linear-gradient(-45deg, rgb(199, 198, 198, 0.5), rgb(0, 0, 0, 0.5));
     text-align: center;
     border-radius: 30px;
-    opacity: 0.5;
+    opacity: 0.8;
     
 }
 .box h1 {
-    color: white;
-    text-transform: uppercase;
-    font-weight:500;
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: uppercase; 
+  color: #ebeced;
 
 }
 
@@ -46,7 +50,7 @@ body {
 }
 
 .box input[type = "text"]:focus, .box input[type = "password"]:focus {
-    width: 280px;
+    width: 250px;
     border-color: black;
 }
 
