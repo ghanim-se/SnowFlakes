@@ -54,18 +54,18 @@
   position: absolute;
 }
 
-.header-landing header button {
+.header-landing header a {
+  text-decoration: none;
+  cursor: pointer;
   z-index: 2;
-  box-shadow: 0 0 3px rgb(167, 164, 164);
-  font-weight: 600;
+  font-weight: 800;
   font-size: 0.85em;
   border:2px solid rgb(255, 255, 255);
-  background:transparent;
   border-radius: 50px;
   background: rgba(255, 225, 225 ,0.3);
   padding: 18px 24px;
   color: rgb(255, 255, 255);
-  text-shadow: 0 0 3px rgb(167, 164, 164);
+  text-shadow: 0 0 3px rgb(172, 170, 170);
 }
 
 

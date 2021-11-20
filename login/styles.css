@@ -1,0 +1,182 @@
+body {
+    position: relative;
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    background-size: cover;
+    height:calc(100vh);
+    background-image: url(images/backgroundSnow.jpg); 
+
+}
+
+.box {
+    z-index: 2;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(-45deg, rgb(199, 198, 198), black);
+    text-align: center;
+    border-radius: 30px;
+    opacity: 0.5;
+    
+}
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight:500;
+
+}
+
+.box input[type = "text"], .box input[type = "password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(199, 198, 198);
+    padding: 15px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    transition: 0.5s;   
+}
+
+.box input[type = "text"]:focus, .box input[type = "password"]:focus {
+    width: 280px;
+    border-color: black;
+}
+
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(199, 198, 198);
+    padding: 15px 40px;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    transition: 0.5s;   
+    cursor: pointer;
+}
+
+.box input[type = "submit"]:hover {
+    border-color: black;
+    background: linear-gradient(45deg, black,rgb(136, 136, 136));
+}
+
+.snowflakes .f-ice i, .snowflakes .s-ice i {
+    z-index: 1;
+    color: white;
+    font-size: 30px;
+    animation: snowflakes 7s linear infinite;
+  }
+.snowflakes {
+    position:relative;
+    top: -30px;
+}
+  
+.snowflakes .f-ice {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+  
+  
+.snowflakes .s-ice {
+    box-sizing: border-box;
+    padding: 0 10px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  } 
+  
+  
+  
+  @keyframes snowflakes {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translateY(95vh);
+      opacity: 0;
+    }
+  }
+  
+  .snowflakes .f-ice i:first-child {
+    animation-delay: 2s;
+    font-size: 15px;
+  }
+  
+  .snowflakes .f-ice i:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .snowflakes .f-ice i:nth-child(3) {
+    animation-delay: 3.5s;
+    font-size: 35px;
+  }
+  .snowflakes .f-ice i:nth-child(4) {
+    animation-delay: 3s;
+  
+  }
+  .snowflakes .f-ice i:nth-child(5) {
+    animation-delay: 2.5s;
+    font-size: 35px;
+  }
+  .snowflakes .f-ice i:nth-child(6) {
+    animation-delay: 6s;
+  }
+  
+  .snowflakes .f-ice i:last-child {
+    animation-delay: 7s;
+    font-size: 20px;
+  }
+  
+  
+  .snowflakes .s-ice i:first-child {
+    animation-delay: 7s;
+    font-size: 15px;
+  }
+  
+  .snowflakes .s-ice i:nth-child(2) {
+    animation-delay: 6s;
+  }
+  
+  .snowflakes .s-ice i:nth-child(3) {
+    animation-delay: 4.5s;
+    font-size: 35px;
+  }
+  .snowflakes .s-ice i:nth-child(4) {
+    animation-delay: 8s;
+  
+  }
+  .snowflakes .s-ice i:nth-child(5) {
+    animation-delay: 4s;
+    font-size: 35px;
+  }
+  .snowflakes .s-ice i:nth-child(6) {
+    animation-delay: 2s;
+  }
+  
+  .snowflakes .s-ice i:last-child {
+    animation-delay: 1s;
+    font-size: 20px;
+  }
